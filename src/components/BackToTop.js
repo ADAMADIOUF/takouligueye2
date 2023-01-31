@@ -1,11 +1,44 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { BsFillArrowUpCircleFill } from 'react-icons/bs'
+import styled from 'styled-components'
+const BackTotop = () => {
+  const [backToTopButton, setBackToTopButton] = useState(0)
 
-const BackToTop = () => {
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        setBackToTopButton(true)
+      } else {
+        setBackToTopButton(false)
+      }
+    })
+  }, [])
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
   return (
-    <div>
-      
-    </div>
+    <Wrapper>
+      {backToTopButton && (
+        <button className='btnTop' onClick={scrollUp}>
+          <BsFillArrowUpCircleFill />
+        </button>
+      )}
+    </Wrapper>
   )
 }
-
-export default BackToTop
+const Wrapper = styled.section`
+  .btnTop {
+    position: fixed;
+    color: var(--clr-primary-9);
+    font-size: 3rem;
+    border-color: transparent;
+    background: transparent;
+    bottom: 100px;
+    z-index: 5;
+    cursor: pointer;
+  }
+`
+export default BackTotop

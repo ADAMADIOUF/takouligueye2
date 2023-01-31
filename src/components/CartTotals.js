@@ -62,7 +62,7 @@ const Wrapper = styled.section`
     font-weight: 700;
     color: #fff;
     gap: 1rem;
-    background: #4d7c0f;
+    background: var(--clr-primary-9);
   }
 `
 export default CartTotals

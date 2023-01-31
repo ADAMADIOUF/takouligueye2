@@ -19,7 +19,7 @@ exports.handler = async (event,context,cb) =>{
       reviews,
       featuredThree,
       desc,
-      descTwo,
+     
       img,
       promo,
       price,
@@ -35,7 +35,7 @@ exports.handler = async (event,context,cb) =>{
     desc,
     stars,
     reviews,
-    descTwo,
+  
     img: url,
     promo,
     price,

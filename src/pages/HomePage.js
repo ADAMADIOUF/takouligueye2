@@ -7,12 +7,13 @@ import SecondCategories from '../components/SecondCategories'
 import FeaturedThree from '../components/FeaturedThree'
 import ThirtCategories from '../components/ThirtCategories'
 import LastCategories from '../components/LastCategories'
+import BackTotop from '../components/BackToTop'
 
 const HomePage = () => {
   return (
     <div>
      <Slide/>
-    
+    <BackTotop/>
       <FeaturedProducts />
       <FirstCategories/>
   <FeaturedTwo/>

@@ -63,7 +63,7 @@ const SidebarContainer = styled.div`
     margin-top: 0.2rem;
   }
   .close-btn:hover {
-    color: var(--clr-red-light);
+    color: var(--clr-primary-9);
   }
   .logo {
     justify-self: center;
@@ -86,8 +86,8 @@ const SidebarContainer = styled.div`
   .links a:hover {
     padding: 1rem 1.5rem;
     padding-left: 2rem;
-    background: var(--clr-grey-10);
-    color: var(--clr-grey-2);
+    background: var(--clr-primary-9);
+    color:#fff;
   }
 
   .sidebar {

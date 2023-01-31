@@ -34,7 +34,7 @@ navigate("/")
   if (error) {
     return <Error />
   }
-  const { name, price, oldPrice, desc, descTwo, img, stars, reviews } = product
+  const { name, price, oldPrice, desc,  img, stars, reviews } = product
   return (
     <Wrapper>
       <div className='section section-center'>
@@ -51,7 +51,7 @@ navigate("/")
               <h5 className='old-price'>{formatPrice(oldPrice)}</h5>
             </div>
             <p className='desc'>{desc}</p>
-            <p className='desc'>{descTwo}</p>
+            
             <hr />
           </section>
           <AddToCart product={product} />

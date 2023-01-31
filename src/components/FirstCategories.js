@@ -11,7 +11,7 @@ import img5 from '../assets/cat5.jpeg'
 const FirstCategories = () => {
  const responsive = {
    superLargeDesktop: {
-     // the naming can be any, depends on you.
+     
      breakpoint: { max: 4000, min: 3000 },
      items: 5,
    },
@@ -58,7 +58,7 @@ const FirstCategories = () => {
         <div className='card'>
           <img src={img5} alt='' className='img-slide-first-categories' />
           <div className='categories-details'>
-            <h3>savons</h3>
+            <h3>Huile</h3>
           </div>
         </div>
       </Carousel>

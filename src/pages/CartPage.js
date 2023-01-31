@@ -34,6 +34,7 @@ const Wrapper = styled.main`
   }
   .btn {
     color: #fff;
+    background:var(--clr-primary-9)
   }
 `
 
